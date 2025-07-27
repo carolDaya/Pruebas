@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_size_xlarge">58sp</dimen>
+    <dimen name="text_size_large">20sp</dimen>
+    <dimen name="text_size_input">20sp</dimen>
+    <dimen name="text_size_normal">16sp</dimen>
+
+    <dimen name="input_height">62dp</dimen>
+
+    <dimen name="margin_xsmall">4dp</dimen>
+    <dimen name="margin_small">16dp</dimen> <dimen name="margin_normal">16dp</dimen>
+    <dimen name="margin_medium">32dp</dimen>
+    <dimen name="margin_large">32dp</dimen> <dimen name="input_horizontal_margin">32dp</dimen> <dimen name="input_padding_start">50dp</dimen>
+    <dimen name="input_padding_end">15dp</dimen>
+
+    <dimen name="button_horizontal_margin">64dp</dimen> </resources>

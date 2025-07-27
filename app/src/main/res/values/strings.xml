@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BMIS</string>
+    <string name="subtitle_control_app">CONTROL APP</string>
+    <string name="hint_phone">Celular</string>
+    <string name="hint_password">Contraseña</string>
+    <string name="remember_me">Recuerdame</string>
+    <string name="forget_password">Olvidaste tu contraseña?</string>
+    <string name="new_user_signup">Crea una cuenta</string>
+    <string name="access">Acceso</string>
+
+    <string name="create_account_title">vamos\na crear\ntu\ncuenta</string>
+        <!-- Hints for EditText fields -->
+    <string name="hint_name">Nombre</string>
+    <string name="hint_phone_number">Número de celular</string>
+    <string name="hint_confirm_password">Vuelve a escribir tu contraseña</string>
+
+        <!-- Checkbox text -->
+    <string name="accept_terms_checkbox">Aceptar</string>
+    <string name="terms_and_conditions">Términos y Condiciones</string>
+
+        <!-- Button text -->
+    <string name="register_button">Inscribirse</string>
+
+        <!-- Login prompt text -->
+    <string name="login_prompt">¿Tienes una cuenta?</string>
+    <string name="login_link">Iniciar sesión</string>
+
+    <!-- Accesibilidad opcional -->
+    <string name="desc_bg_image">Imagen de fondo decorativa</string>
+    <string name="desc_logo_image">Logo BMIS</string>
+    <string name="desc_plane_image">Imagen de avión decorativa</string>
+    <string name="nombre">Nombre</string>
+    <string name="n_mero_de_celular">Número de celular</string>
+    <string name="contrase_a">Contraseña</string>
+    <string name="vuelve_a_escribir_tu_contrase_a">Vuelve a escribir tu contraseña</string>
+    <string name="aceptar">Aceptar</string>
+    <string name="t_rminos_y_condiciones">Términos y Condiciones</string>
+    <string name="inscribirse">Inscribirse</string>
+    <string name="tienes_una_cuenta">¿Tienes una cuenta?</string>
+    <string name="iniciar_sesi_n">Iniciar sesión</string>
+</resources>
