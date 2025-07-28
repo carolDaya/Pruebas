@@ -8,15 +8,12 @@ import androidx.room.PrimaryKey;
         indices = {@Index(value = {"phone_number"}, unique = true)}) // Asegura que phone_number sea único
 public class User {
     @PrimaryKey(autoGenerate = true) // ID autoincremental
-    public int uid; // Puedes usar un int o String para el ID
-
+    public int uid;
     @ColumnInfo(name = "name")
     public String name;
-
     @ColumnInfo(name = "phone_number") // Nombre de la columna en la DB
     public String phoneNumber;
-
-    @ColumnInfo(name = "password_hash") // Guardaremos el hash de la contraseña, NO el texto plano
+    @ColumnInfo(name = "password_hash") // Guardar el hash de la contraseña, NO el texto plano
     public String passwordHash;
 
     // Constructor para Room (Room lo usa para reconstruir objetos)
@@ -32,7 +29,7 @@ public class User {
     public String getPhoneNumber() { return phoneNumber; }
     public String getPasswordHash() { return passwordHash; }
 
-    // Setters (pueden ser útiles, pero no estrictamente necesarios para Room si el constructor es suficiente)
+    // Setters
     public void setUid(int uid) { this.uid = uid; }
     public void setName(String name) { this.name = name; }
     public void setPhoneNumber(String phoneNumber) { this.phoneNumber = phoneNumber; }

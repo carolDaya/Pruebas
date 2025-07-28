@@ -9,24 +9,41 @@ import androidx.room.RoomDatabase;
 import com.example.login.data.dao.UserDao;
 import com.example.login.data.model.User;
 
-// Define las entidades (tablas) y la versión de la base de datos
-@Database(entities = {User.class}, version = 1, exportSchema = false)
+/**
+ * Clase principal de Room Database.
+ * Define las entidades que usarás y la versión del esquema.
+ */
+@Database(
+        entities = {User.class}, // que tablas existen
+        version = 1,             // Versión actual del esquema. Cambia si modificas tablas.
+        exportSchema = false     // Si quieres exportar esquema a carpeta /schemas (útil en producción)
+)
 public abstract class AppDataBase extends RoomDatabase {
-    // Método abstracto para obtener el DAO
+    /**
+     * Cada DAO declarado aquí expone operaciones CRUD para una tabla.
+     */
     public abstract UserDao userDao();
-
-    // Implementación Singleton para asegurar una única instancia de la DB
+    /**
+     * Singleton para garantizar que exista una sola instancia de la DB en toda la app.
+     * Es thread-safe gracias a 'synchronized'.
+     */
     private static volatile AppDataBase INSTANCE;
-    private static final String DATABASE_NAME = "login_database"; // Nombre del archivo de la DB
+    private static final String DATABASE_NAME = "login_database"; // Archivo físico SQLite
 
+    /**
+     * getDatabase(Context)
+     * Devuelve la instancia única de AppDataBase.
+     * Si no existe, la crea usando Room.
+     */
     public static AppDataBase getDatabase(final Context context) {
         if (INSTANCE == null) {
             synchronized (AppDataBase.class) {
                 if (INSTANCE == null) {
-                    INSTANCE = Room.databaseBuilder(context.getApplicationContext(),
-                                    AppDataBase.class, DATABASE_NAME)
-                            .fallbackToDestructiveMigration() // Útil para desarrollo: borra y recrea la DB si el esquema cambia. ¡NO USAR EN PRODUCCIÓN CON DATOS IMPORTANTES!
-                            .allowMainThreadQueries() // <<<<<<<<< TEMPORAL: PERMITE QUERIES EN HILO PRINCIPAL (QUITAR EN PRODUCCIÓN)
+                    INSTANCE = Room.databaseBuilder(
+                                    context.getApplicationContext(),
+                                    AppDataBase.class,
+                                    DATABASE_NAME
+                            )
                             .build();
                 }
             }

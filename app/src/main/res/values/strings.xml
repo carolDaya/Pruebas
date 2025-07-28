@@ -3,17 +3,40 @@
     <string name="app_name">BMIS</string>
     <string name="subtitle_control_app">CONTROL APP</string>
 
+    <!-- Mensajes de error -->
+    <string name="error_empty_fields">Completa todos los campos.</string>
+    <string name="error_password_mismatch">Las contraseñas no coinciden.</string>
+    <string name="error_password_length">La contraseña debe tener mínimo 6 caracteres.</string>
+    <string name="error_terms_required">Debes aceptar los términos.</string>
+    <string name="register_success">Registro exitoso. ¡Inicia sesión!</string>
+    <string name="error_empty_phone">Por favor, ingresa tu número de celular.</string>
+    <string name="phone_not_registered">Número de celular no registrado.</string>
+    <string name="error_empty_passwords">Por favor, ingresa y confirma tu nueva contraseña.</string>
+
+    <!-- Mensajes de éxito -->
+    <string name="phone_verified">Número verificado. Procede a restablecer tu contraseña.</string>
+    <string name="password_reset_success">¡Contraseña restablecida! Inicia sesión con tu nueva contraseña.</string>
+
     <!-- login -->
+    <string name="bg_image_desc">Imagen de fondo decorativa</string>
+    <string name="logo_image_desc">Logo de la aplicación BMIS</string>
+    <string name="plane_image_desc">Imagen de avión decorativa</string>
+    <string name="bmis_title">BMIS</string>
+    <string name="control_app">CONTROL APP</string>
+    <string name="phone_hint">Celular</string>
+    <string name="password_hint">Contraseña</string>
+    <string name="new_user_signup">¿Nuevo usuario? Regístrate</string>
+    <string name="access">Acceder</string>
     <string name="hint_phone">Celular</string>
     <string name="hint_password">Contraseña</string>
     <string name="remember_me">Recuerdame</string>
     <string name="forget_password">Olvidaste tu contraseña?</string>
-    <string name="new_user_signup">Crea una cuenta</string>
-    <string name="access">Acceso</string>
-
+    <string name="error_phone_required">El número de celular es requerido.</string>
+    <string name="error_password_required">La contraseña es requerida.</string>
+    <string name="welcome_message">¡Bienvenido de nuevo!</string>
+    <string name="login_error_prefix">Error de inicio de sesión: </string>
 
     <!-- register-->
-
     <string name="create_account_title">vamos\na crear\ntu\ncuenta</string>
     <string name="hint_name">Nombre</string>
     <string name="n_mero_de_celular">Número de celular</string>
@@ -25,7 +48,7 @@
     <string name="login_prompt">¿Tienes una cuenta?</string>
     <string name="login_link">Iniciar sesión</string>
 
-    <!-- ********* PASSWORD RECOVERY FLOW ********* -->
+    <!-- PASSWORD RECOVERY FLOW -->
     <!-- Forgot Password (First Screen) -->
     <string name="forgot_password_title">¿Has\nolvidado\ntu\ncontraseña?</string>
     <string name="forgot_password_instructions">No te preocupes, te enviaremos instrucciones para restablecerlas.</string>
@@ -39,12 +62,18 @@
     <string name="set_new_password">Restablecer</string> <!-- Texto del botón final de restablecer -->
 
 
-    <!-- ********* ACCESSIBILITY ********* -->
+    <!-- ACCESSIBILITY -->
     <string name="desc_bg_image">Imagen de fondo decorativa</string>
     <string name="desc_logo_image">Logo BMIS</string>
     <string name="desc_plane_image">Imagen de avión decorativa</string>
     <string name="close">Close</string>
     <string name="back_arrow">Back Arrow</string>
     <string name="lock_icon">Lock Icon</string>
+
+    <!--Panel del Admin-->
+    <string name="admin_panel_title">Panel de Administrador</string>
+    <string name="btn_logout_admin">Cerrar sesión</string>
+    <string name="access_denied">Acceso denegado.</string>
+    <string name="open_user_list_pending">Abrir lista de usuarios (pendiente)</string>
 
 </resources>

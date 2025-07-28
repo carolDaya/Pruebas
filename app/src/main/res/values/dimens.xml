@@ -1,23 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="text_size_xlarge">58sp</dimen>
-    <dimen name="text_size_large">20sp</dimen>
-    <dimen name="text_size_input">20sp</dimen>
-    <dimen name="text_size_normal">16sp</dimen>
 
+    <!-- Tamaños de texto -->
+    <dimen name="text_size_xlarge">58sp</dimen> <!-- Título principal -->
+    <dimen name="text_size_large">20sp</dimen>  <!-- Subtítulos -->
+    <dimen name="text_size_input">20sp</dimen>  <!-- Inputs -->
+    <dimen name="text_size_normal">16sp</dimen> <!-- Textos generales -->
+
+    <!-- Altura de campos de entrada -->
     <dimen name="input_height">62dp</dimen>
 
+    <!-- Márgenes generales -->
     <dimen name="margin_xsmall">4dp</dimen>
     <dimen name="margin_small">16dp</dimen>
     <dimen name="margin_normal">16dp</dimen>
     <dimen name="margin_medium">32dp</dimen>
     <dimen name="margin_large">32dp</dimen>
+
+    <!-- Márgenes específicos -->
     <dimen name="input_horizontal_margin">32dp</dimen>
+    <dimen name="button_horizontal_margin">64dp</dimen>
+
+    <!-- Padding para EditText -->
     <dimen name="input_padding_start">50dp</dimen>
     <dimen name="input_padding_end">15dp</dimen>
 
-    <dimen name="button_horizontal_margin">64dp</dimen>
-    <!-- Default screen margins, per the Android Design guidelines. -->
+    <!-- Márgenes de actividad por defecto -->
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
+
 </resources>
